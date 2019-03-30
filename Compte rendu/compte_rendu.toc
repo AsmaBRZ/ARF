@@ -1,0 +1,49 @@
+\babel@toc {french}{}
+\contentsline {chapter}{\numberline {1}Arbres de d\IeC {\'e}cision, s\IeC {\'e}lection de mod\IeC {\`e}les}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {section}{\numberline {1.1}Exp\IeC {\'e}rience pr\IeC {\'e}liminaires sur le mod\IeC {\`e}le}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {section}{\numberline {1.2}Sur et sous apprentissage}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {1.3}Validation crois\IeC {\'e}e}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {chapter}{\numberline {2}Estimation de densit\IeC {\'e}}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {2.1}D\IeC {\'e}finition}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {2.2}Exp\IeC {\'e}rimentations}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {2.2.1}Calcul du param\IeC {\`e}tre optimal h* de Gauss }{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {chapter}{\numberline {3}Descente de gradient}{6}
+\contentsline {section}{\numberline {3.1}Optimisation de fonctions}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {3.1.1}Exp\IeC {\'e}rimentations}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {3.2}R\IeC {\'e}gression logistique}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {section}{\numberline {3.3}Bayes Na\IeC {\"\i }f Vs R\IeC {\'e}gression logistique }{9}
+\contentsline {paragraph}{}{9}
+\contentsline {chapter}{\numberline {4}Perceptron}{10}
+\contentsline {section}{\numberline {4.1}D\IeC {\'e}finition}{10}
+\contentsline {section}{\numberline {4.2}Exp\IeC {\'e}rimentations}{10}
+\contentsline {subsection}{\numberline {4.2.1}Donn\IeC {\'e}es USPS}{10}
+\contentsline {subsection}{\numberline {4.2.2}Projection polynomiale}{10}
+\contentsline {subsection}{\numberline {4.2.3}Projection gaussienne}{10}
