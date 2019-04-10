@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.20)  30 MAR 2019 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.20)  2 APR 2019 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,7 +1271,7 @@ Package pdftex.def Info: histo.png  used on input line 163.
 File: parzen_vs_gauss.png Graphic file (type png)
 <use parzen_vs_gauss.png>
 Package pdftex.def Info: parzen_vs_gauss.png  used on input line 173.
-(pdftex.def)             Requested size: 400.38872pt x 159.45937pt.
+(pdftex.def)             Requested size: 500.484pt x 199.32182pt.
 [4
 
  <./histo.png>]
@@ -1329,34 +1329,72 @@ Package pdftex.def Info: reg_log.png  used on input line 275.
 
 [8 <./f1_eppetit2.png> <./f2.png> <./f3.png>] [9 <./reg_log.png>]
 Chapitre 4.
+<hVSm.png, id=88, 558.58687pt x 422.32782pt>
+File: hVSm.png Graphic file (type png)
+<use hVSm.png>
+Package pdftex.def Info: hVSm.png  used on input line 296.
+(pdftex.def)             Requested size: 300.29344pt x 227.04832pt.
 [10
 
-] (./compte_rendu.aux) ) 
+ <./hVSm.png>]
+<sansbiaisVSbiais.png, id=94, 587.94656pt x 216.81pt>
+File: sansbiaisVSbiais.png Graphic file (type png)
+<use sansbiaisVSbiais.png>
+Package pdftex.def Info: sansbiaisVSbiais.png  used on input line 309.
+(pdftex.def)             Requested size: 400.38872pt x 147.64719pt.
+<variantes.png, id=95, 876.27374pt x 213.04594pt>
+File: variantes.png Graphic file (type png)
+<use variantes.png>
+Package pdftex.def Info: variantes.png  used on input line 321.
+(pdftex.def)             Requested size: 450.43253pt x 109.51344pt.
+ [11 <./sansbiaisVSbiais.png> <./variantes.png>]
+<6717.png, id=101, 974.13937pt x 235.63031pt>
+File: 6717.png Graphic file (type png)
+<use 6717.png>
+Package pdftex.def Info: 6717.png  used on input line 331.
+(pdftex.def)             Requested size: 400.38872pt x 96.84634pt.
+<69_steps.png, id=102, 404.51125pt x 279.0425pt>
+File: 69_steps.png Graphic file (type png)
+<use 69_steps.png>
+Package pdftex.def Info: 69_steps.png  used on input line 338.
+(pdftex.def)             Requested size: 200.19054pt x 138.09879pt.
+<proj.png, id=103, 946.28531pt x 216.81pt>
+File: proj.png Graphic file (type png)
+<use proj.png>
+Package pdftex.def Info: proj.png  used on input line 351.
+(pdftex.def)             Requested size: 450.43253pt x 103.20085pt.
+ [12 <./6717.png> <./69_steps.png> <./proj.png>]
+<gauss_nb.png, id=110, 585.68813pt x 217.5628pt>
+File: gauss_nb.png Graphic file (type png)
+<use gauss_nb.png>
+Package pdftex.def Info: gauss_nb.png  used on input line 362.
+(pdftex.def)             Requested size: 450.43253pt x 167.328pt.
+ [13 <./gauss_nb.png>] (./compte_rendu.aux) ) 
 Here is how much of TeX's memory you used:
- 17167 strings out of 492982
- 334954 string characters out of 6134896
+ 17204 strings out of 492982
+ 335508 string characters out of 6134896
  403613 words of memory out of 5000000
- 20567 multiletter control sequences out of 15000+600000
+ 20597 multiletter control sequences out of 15000+600000
  540599 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,36p,10440b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb>
-Output written on compte_rendu.pdf (13 pages, 3437705 bytes).
+</usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on compte_rendu.pdf (16 pages, 3673898 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 157 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

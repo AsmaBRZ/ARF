@@ -170,7 +170,7 @@ Nous remarquons que lorsque nous fixons le pas de discrétisation à une grande 
 Maintenant, nous allons étudier la méthode à noyaux. Les noyaux implémentés sont Parzen et et Gauss.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{parzen_vs_gauss.png}
+		\includegraphics[width=1\textwidth]{parzen_vs_gauss.png}
 		\caption{Estimation de densité par la méthode à noyaux (Parzen et Gauss)}
 	\end{center}
 \end{figure}
@@ -288,15 +288,81 @@ Nous avons implémenté le classifier naïf de Bayes afin de comparer ses résul
 Nous étudions dans ce chapitre l'algorithme du Perceptron en se servant de la descente de gradient. Nous considérons comme fonctions de coûts deux fonctions soient: Les moindres carrés (MSE) et le hinge.
 \section{Expérimentations}
 \paragraph{}
-Nous commençons notre étude par une comparaison de résultats entre les deux fonctions de coûts. Nous pouvons voir que qu'avec les deux méthodes, nous arrivons à séparer de façon acceptable les données. Or il n'est pas négligeable que le hinge a de meilleur résultat que le coût des moindres carrés. Cependant le hinge a comme résultat en apprentissage 0.994 et en test 0.989. Mais, le coput des moindres carrés a comme résultat en apprentissage et en prédiction 0.986.
+Nous commençons notre étude par une comparaison de résultats entre les deux fonctions de coûts. Nous pouvons voir que qu'avec les deux méthodes, nous arrivons à séparer de façon acceptable les données. Or il n'est pas négligeable que le hinge a de meilleur résultat que le coût des moindres carrés. Cependant le hinge a comme résultat en apprentissage 0.994 et en test 0.989. Mais, le coût des moindres carrés a comme résultat en apprentissage et en prédiction 0.986.
+\paragraph{}
+Comme la fonction MSE représente une régression linéaire pour le perceptron, elle retourne un résultat moins bon que le hinge car elle pénalise quelques exemples qui basiquement sont bien classés mais éloignés de la droite séparatrice. Or, le hinge qui elle est bien adaptée au perceptron, elle cherche à corriger le vecteurs de poids à chaque itération uniquement lorsque la prédiction est fausse. 
  \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{reg_log.png}
-		\caption{Les valeurs de poids de l'expérience 1Vs7 en fonction de  $\epsilon$}
+		\includegraphics[width=0.6\textwidth]{hVSm.png}
+		\caption{Perceptron avec différentes fonctions de coût avec $\epsilon=0.2$ et le nombre maximum d'itérations=200}
+	\end{center}
+\end{figure}
+\paragraph{}
+Nous avons effectué 
+\subsection{Considération du biais}
+\paragraph{}
+Le biais permet de rendre le modèle plus expressif. Nous avons effectué quelques expériences pour voir ce que le biais pourrait rapporter à la précision du modèle.
+\paragraph{}
+Sur plusieurs exécutions données en minibatch, approximativement l'expérience sans biais à comme score 0.8 en apprentissage et en test. Cependant, lorsque nous considérons le biais nous n'obtenons jamais de score inférieur a 0.9.
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{sansbiaisVSbiais.png}
+		\caption{L'impact du biais sur le perceptron avec $\epsilon=0.2$ et le nombre maximum d'itérations=200}
+	\end{center}
+\end{figure}
+
+ 
+\subsection{Batch - MiniBatch - Stochastique}
+Nous avons implémenté les trois variantes de l'algorithme: batch, miniBatch et stochastique. La variante qui est le plus rapide en convergence c'est Batch or son temps d'exécution est très coûteux comparant au stochastique qui ne considère qu'un exemple par itération. Cependant la variante stochastique reste moins bonne que le batch car nous ne prenons en compte qu'un exemple tiré aléatoirement pour corriger le vecteur des poids. Ceci produit le phénomène d'oscillations. Donc elle ne présente pas des résultats précis et satisfaisants comparant au batch.
+\paragraph{}
+Ensuite, comme relativement hybride, le minibatch se situe entre les deux autres variantes en terme de temps de calcul et en précision. Puisque en minibatch, nous ne considérons que des sous-ensembles de la base de donnée tirés de façon aléatoire.
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{variantes.png}
+		\caption{Évaluation des variantes de l'algorithme du Perceptron en fonction du nombre d'itérations et avec $\epsilon=0.1$}
 	\end{center}
 \end{figure}
 \subsection{Données USPS}
-\subsection{Projection polynomiale}
-\subsection{Projection gaussienne}
+\paragraph{}
+Reprenons les données USPS et sans considération du biais. Nous allons évaluer le perceptron sur différents ensembles de chiffres et analyser les courbes d'erreurs en apprentissage et en test en fonction du nombre d'itérations effectuées.
+\paragraph{}
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{6717.png}
+		\caption{Visualisation de la matrice des poids sans biais avec $\epsilon=0.1$ et le nombre maximum d'itérations=1000}
+	\end{center}
+\end{figure}
+Nous avons choisi les chiffres 6 et 9 dans cette expérience. Nous avons pris en compte l'initialisation du vecteur de poids. Premièrement nous l'avons initialisé de façon aléatoire. Les résultats n'étaient pas très satisfaisants comparant à la prise en compte des données. Deuxièmement, nous avons considéré ce dernier critère cité en initialisant le vecteurs de poids avec la moyenne des valeurs de la base de données. La figure ci-dessus montre clairement les chiffres 6 et 9 en tenant compte des données.
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{69_steps.png}
+		\caption{Les courbes d’erreurs en apprentissage et en test en fonction du nombre d’itérations.  avec $\epsilon=0.1$ }
+	\end{center}
+\end{figure}
 
+\subsection{Projection polynomiale}
+Nous avons effectué deux sortes de projection polynomiale:
+\begin{enumerate}
+	\item En rajoutant 3 dimensions à notre base de données: $x_1^2,x_2^2,x_1x_2$
+	\item En remplaçant la base de données par: $x_1^2,x_2^2,\sqrt{x_1x_2}$
+\end{enumerate}
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{proj.png}
+		\caption{Perceptron avec différentes projections polynomiales avec $\epsilon=0.2$ et le nombre maximum d'itérations=1000}
+	\end{center}
+\end{figure}
+\paragraph{}
+Nous remarquons que le modèle tel construit a réussi à séparer les classes du XOR correctement. Nous pouvons dire que plus le nombre de dimensions que nous considérons lors de la projection est grand, plus nous garantissons de meilleures résultats. Par conséquent le nombre de dimensions rajouté affecte l'expressivité du modèle.
+\subsection{Projection gaussienne}
+\paragraph{}
+Dans cette partie, nous considérons la projection gaussienne pour voir ce quelle peut rapporter à l'expressivité du modèle. L'expérience manipule des données générées aléatoirement et varie le nombre de points pour la base de projection. Nous avons effectué cette expérience pour les deux variantes d'algorithmes: minibatch et stochastique.  
+ \begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{gauss_nb.png}
+		\caption{Projection gaussienne en fonction du nombre de points et des variantes du perceptron $\epsilon=0.2$ et le nombre maximum d'itérations=1000}
+	\end{center}
+\end{figure}
+\paragraph{}
+Nous constatons que lorsqu'il y a peu de données le minibatch a le meilleur score en apprentissage. Nous pouvons dire qu'une petite base de données n'est pas difficile à apprendre vu sa taille. Or, lorsqu'il s'agit d'une base de données très riche la courbe d'apprentissage se superpose approximativement sur celle de test et toutes les deux ont tendance à décroître car la généralisation devient vite difficile à cause du  très grand nombre de points dont nous disposons. Vers 0.5 Le modèle semble se stabiliser. Nous concluons qu'il vaut mieux une base de données de taille ni trop petite ni trop grande. 
 \end{document}

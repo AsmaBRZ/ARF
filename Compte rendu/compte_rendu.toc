@@ -43,7 +43,21 @@
 \contentsline {paragraph}{}{9}
 \contentsline {chapter}{\numberline {4}Perceptron}{10}
 \contentsline {section}{\numberline {4.1}D\IeC {\'e}finition}{10}
+\contentsline {paragraph}{}{10}
 \contentsline {section}{\numberline {4.2}Exp\IeC {\'e}rimentations}{10}
-\contentsline {subsection}{\numberline {4.2.1}Donn\IeC {\'e}es USPS}{10}
-\contentsline {subsection}{\numberline {4.2.2}Projection polynomiale}{10}
-\contentsline {subsection}{\numberline {4.2.3}Projection gaussienne}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.2.1}Consid\IeC {\'e}ration du biais}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.2.2}Batch - MiniBatch - Stochastique}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.2.3}Donn\IeC {\'e}es USPS}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {4.2.4}Projection polynomiale}{12}
+\contentsline {paragraph}{}{13}
+\contentsline {subsection}{\numberline {4.2.5}Projection gaussienne}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
